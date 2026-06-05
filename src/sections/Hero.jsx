@@ -113,6 +113,11 @@ const Hero = ({ isDarkMode }) => {
         resume_url: null
     };
 
+    const rawName = activeHero.name || '';
+    const isLongName = rawName.length > 12;
+    // Prevent wrapping of single-character initials (e.g. "T Thuyelishwaran" -> "T\u00a0Thuyelishwaran")
+    const displayName = rawName.replace(/\b([a-zA-Z])\s+/g, '$1\u00a0');
+
     return (
         <section id="home" className="min-h-screen pt-32 pb-20 px-4 flex items-center bg-transparent overflow-hidden relative">
             {/* Modern Gradient Mesh Background */}
@@ -255,13 +260,17 @@ const Hero = ({ isDarkMode }) => {
                         Available for work
                     </motion.div>
 
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6">
+                    <h1 className={`font-black tracking-tight mb-6 ${
+                        isLongName 
+                            ? 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight' 
+                            : 'text-5xl md:text-7xl lg:text-8xl leading-none'
+                    }`}>
                         <span className={`text-transparent bg-clip-text animate-gradient ${
                             isDarkMode 
                                 ? 'bg-gradient-to-r from-white via-rose-200 to-purple-300' 
                                 : 'bg-gradient-to-r from-neutral-900 via-rose-600 to-purple-700'
                         }`}>
-                            {activeHero.name}
+                            {displayName}
                         </span>
                     </h1>
 
