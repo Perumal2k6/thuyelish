@@ -9,7 +9,7 @@ import axios from 'axios';
  * Backend Host Resolution
  */
 const API_URL = import.meta.env.VITE_API_URL;
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || API_URL?.replace(/\/api$/, '') || 'https://protfolio-backend-sage.vercel.app';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || API_URL?.replace(/\/api$/, '') || 'https://thuyel-backend.vercel.app';
 
 export const BASE_URL = API_URL;
 export { BACKEND_URL };
