@@ -106,10 +106,10 @@ const Footer = () => {
                             <h3 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-4">Connect</h3>
                             <div className="flex gap-3">
                                 {[
-                                    { Icon: Github, url: 'https://github.com/Perumal2k6', name: 'GitHub' },
-                                    { Icon: Linkedin, url: 'https://www.linkedin.com/in/perumal-m-274413385/', name: 'LinkedIn' },
-                                    { Icon: Twitter, url: 'https://x.com/Perumal_0303', name: 'Twitter' },
-                                    { Icon: Instagram, url: 'https://www.instagram.com/sasi__official__03?igsh=bGVpcHpoczN6Mnph', name: 'Instagram' }
+                                    { Icon: Github, url: 'https://github.com/thuyelish', name: 'GitHub' },
+                                    { Icon: Linkedin, url: 'www.linkedin.com/in/thuyelish-t-a7362a32b/', name: 'LinkedIn' },
+                                    { Icon: Twitter, url: '', name: 'Twitter' },
+                                    { Icon: Instagram, url: 'https://www.instagram.com/thuyel_cr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', name: 'Instagram' }
                                 ].map(({ Icon, url, name }, idx) => (
                                     <motion.a
                                         key={idx}

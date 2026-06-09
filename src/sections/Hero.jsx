@@ -208,10 +208,10 @@ const Hero = ({ isDarkMode }) => {
                             : 'bg-white/80 border-white shadow-xl shadow-purple-500/10'
                             }`}>
                             {[
-                                { name: 'Linkedin', url: 'https://www.linkedin.com/in/perumal-m-274413385/', gradient: 'from-blue-500 to-blue-600' },
-                                { name: 'Github', url: 'https://github.com/Perumal2k6', gradient: 'from-gray-700 to-gray-900' },
-                                { name: 'Twitter', url: 'https://x.com/Perumal_0303', gradient: 'from-cyan-400 to-blue-500' },
-                                { name: 'Instagram', url: 'https://www.instagram.com/sasi__official__03?igsh=bGVpcHpoczN6Mnph', gradient: 'from-pink-500 via-purple-500 to-orange-500' }
+                                { name: 'Linkedin', url: 'www.linkedin.com/in/thuyelish-t-a7362a32b/', gradient: 'from-blue-500 to-blue-600' },
+                                { name: 'Github', url: 'https://github.com/thuyelish/', gradient: 'from-gray-700 to-gray-900' },
+                                { name: 'Twitter', url: '', gradient: 'from-cyan-400 to-blue-500' },
+                                { name: 'Instagram', url: 'https://www.instagram.com/thuyel_cr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', gradient: 'from-pink-500 via-purple-500 to-orange-500' }
                             ].map((Platform, i) => (
                                 <motion.a 
                                     key={i} 
