@@ -107,7 +107,7 @@ const Footer = () => {
                             <div className="flex gap-3">
                                 {[
                                     { Icon: Github, url: 'https://github.com/thuyelish', name: 'GitHub' },
-                                    { Icon: Linkedin, url: 'www.linkedin.com/in/thuyelish-t-a7362a32b/', name: 'LinkedIn' },
+                                    { Icon: Linkedin, url: 'https://www.linkedin.com/in/thuyelish-t-a7362a32b/', name: 'LinkedIn' },
                                     { Icon: Twitter, url: '', name: 'Twitter' },
                                     { Icon: Instagram, url: 'https://www.instagram.com/thuyel_cr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', name: 'Instagram' }
                                 ].map(({ Icon, url, name }, idx) => (
